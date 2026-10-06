@@ -10,6 +10,7 @@ export default defineConfig({
     entrypoint: '../.output/server/index.mjs',
     workersDev: true,
     previewUrls: false,
+    domains: ['l.vjh.io'],
     observability: {
       logs: {
         enabled: true,
