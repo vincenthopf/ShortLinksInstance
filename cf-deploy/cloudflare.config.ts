@@ -28,6 +28,10 @@ export default defineConfig({
       NUXT_DISABLE_BOT_ACCESS_LOG: bindings.text('true'),
       NUXT_DISABLE_AUTO_BACKUP: bindings.text('true'),
       NUXT_SITE_TOKEN: bindings.secret(),
+      NUXT_CF_API_TOKEN: bindings.secret(),
+      ANALYTICS: bindings.analyticsEngineDataset({
+        name: 'sink',
+      }),
       DB: bindings.d1({
         name: 'sink',
         id: '969a1081-df82-4e10-84a9-ca636ddaca7d',
